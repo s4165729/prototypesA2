@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+#startstopbutton {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/*the feild the dot moves around in, the position here drives the type
+of sound that is played, the background linex mark the 7 note columns and 
+3 octave rows so the mapping is visable*/
+
+#field {
+    position: relative;
+    width: 600px;
+    max-width: 90vw;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-image:
+    repeating-linear-gradient(to right, transparent 0, transparent cal
+    c(100% / 7- 1px), #ddd calc(100% / 7 - 1px), #ddd calc(100% /7));
+    repeating-linear-gradient(to bottom, transparent 0, tranparent cal
+    c(100%/ 3 -1px), #ddd calc(100% / 3 -1px), #ddd calc(100% / 3));
+}
+
+#dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /*so it doesnt mouse tracking on the field*/
+
+}
+
