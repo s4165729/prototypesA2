@@ -22,11 +22,11 @@ const piano = new Tone.Sampler({
 const noteLetters = ["C", "D", "E", "F", "G", "A", "B"];
 
 //y positon of up and down picks the type of octive- moving up plays it
-higher and moving it down plays it lower// 
+//higher and moving it down plays it lower// 
 //same idea as the plane A3/A4 toggle in the middle of little wings// 
 
 const octaves = [5, 4, 3]; //top of the field is 5 high and bottom being 3 low
-let lastCell = null; //tracks white note or cell the dot is currently in 
+let lastCell = null; //tracks white note or cell the dot is currently in//
 async function startAudioIfNeeded() {
     if (!audioHasStarted) {
         await Tone.start();
@@ -47,8 +47,7 @@ field.addEventListener("mousemove", function (e) {
     let x = (e.clientX - rect.left) / rect.width;
     let y = (e.clientY - rect.top) / rect.height;
     x = Math.min(Math.max(x, 0), 1);
-    y = Math.max(Math.min(y, 0),1);
-})
+    y = Math.min(Math.max(y, 0),1);
 
 dot.style.left = (x * 100) + "%";
 dot.style.top = (y * 100) + "%";
