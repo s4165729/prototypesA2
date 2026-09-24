@@ -23,10 +23,8 @@ of sound that is played, the background linex mark the 7 note columns and
     margin: 0 auto;
     border: 2px solid black;
     background-image:
-    repeating-linear-gradient(to right, transparent 0, transparent cal
-    c(100% / 7- 1px), #ddd calc(100% / 7 - 1px), #ddd calc(100% /7));
-    repeating-linear-gradient(to bottom, transparent 0, tranparent cal
-    c(100%/ 3 -1px), #ddd calc(100% / 3 -1px), #ddd calc(100% / 3));
+    repeating-linear-gradient(to right, transparent 0, transparent calc(100% / 7 - 1px), #ddd calc(100% / 7 - 1px), #ddd calc(100% /7)),
+    repeating-linear-gradient(to bottom, transparent 0, tranparent calc(100%/ 3 - 1px), #ddd calc(100% / 3 - 1px), #ddd calc(100% / 3)),
 }
 
 #dot {
